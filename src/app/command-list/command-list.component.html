@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="px-0">
+        <h5>Command list</h5>
+        <div id="framework-commands" class="row">
+            <div class="col-sm-1">{{command.framework}}</div>
+            <div class="col-sm-2">{{command.content}}</div>
+            <div class="col-sm-2">{{command.flags}}</div>
+            <div class="col-sm-3"><div id="command-list"></div>
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let key of command.syntax.keys()">
+                        {{key}} : {{command.syntax.get(key)}}
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4">{{command.purpose}}</div>
+        </div>
+    </div>
+</div>
+

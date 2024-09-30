@@ -9,6 +9,7 @@ import { Command } from '../models/command';
 export class CommandListComponent {
 
   command: Command = {
+    logo:"https://logosandtypes.com/wp-content/uploads/2024/01/angular.svg",
     id: 1,
     framework: 'Angular',
     content: 'ng new appointment-app',

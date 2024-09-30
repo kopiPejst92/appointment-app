@@ -1,4 +1,5 @@
 export interface Command {
+    logo: string,
     id: number
     framework: string
     content: string
